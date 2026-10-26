@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Highway Rush | Car Racing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <div class="game-header">
+            <h1>🏎️ HIGHWAY RUSH</h1>
+            <p>Made from scratch using JavaScript</p>
+        </div>
+
+        <div class="game-area">
+
+            <canvas id="gameCanvas" width="450" height="650"></canvas>
+
+            <div class="hud">
+                <div>SCORE: <span id="score">0</span></div>
+                <div>BEST: <span id="best">0</span></div>
+                <div>SPEED: <span id="speed">0</span></div>
+            </div>
+
+            <div id="menu" class="overlay">
+                <h2>HIGHWAY RUSH</h2>
+
+                <p>Dodge traffic and survive!</p>
+
+                <button id="startButton">▶ PLAY GAME</button>
+
+                <p class="instructions">
+                    ← → Move<br>
+                    P Pause<br>
+                    SPACE Start / Restart
+                </p>
+            </div>
+
+            <div id="gameOver" class="overlay hidden">
+                <h2>💥 GAME OVER</h2>
+
+                <p>Your Score: <span id="finalScore">0</span></p>
+
+                <button id="restartButton">↻ PLAY AGAIN</button>
+            </div>
+
+            <div id="pauseScreen" class="overlay hidden">
+                <h2>⏸ PAUSED</h2>
+                <p>Press P to resume</p>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button id="leftButton">◀ LEFT</button>
+            <button id="rightButton">RIGHT ▶</button>
+        </div>
+
+        <p class="footer">
+            Created for Hack Club Mipmap
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
